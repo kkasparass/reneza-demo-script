@@ -77,7 +77,7 @@
         window.addEventListener("click", scriptChecker);
       }
       return;
-    }, 500);
+    }, 300);
   }
 
   function runPropUploadScript() {
