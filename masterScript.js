@@ -210,11 +210,6 @@
       "change",
       "united kingdom"
     );
-    setReactSelectData(
-      "div[name='locations[0].status']",
-      "change",
-      "living with fam"
-    );
     setReactData(
       "input[name='locations[0].address.postcode']",
       "change",
@@ -231,11 +226,118 @@
       "Talma Rd"
     );
     setReactData("input[name='locations[0].address.town']", "change", "London");
-    setReactData("input[name='locations[0].address.country']", "change", "GB");
     setReactData(
       "input[name='locations[0].livedFor.from']",
       "change",
-      "05/08/1998"
+      "15/01/2020"
+    );
+    setReactSelectData(
+      "div[name='locations[0].status']",
+      "change",
+      "Renting through same agent"
+    );
+    setReactData("input[name='locations[0].ref.name']", "change", "Jack");
+    setReactData(
+      "input[name='locations[0].ref.phone']",
+      "change",
+      "+441632960176"
+    );
+    setReactData(
+      "input[name='locations[0].ref.email']",
+      "change",
+      "Jack@fortuneHouse.com"
+    );
+    setReactData(
+      "input[name='locations[0].ref.address.postcode']",
+      "change",
+      "SW10 0RH"
+    );
+    setReactData(
+      "input[name='locations[0].ref.address.streetNumber']",
+      "change",
+      "16"
+    );
+    setReactData(
+      "input[name='locations[0].ref.address.street']",
+      "change",
+      "Pooles Ln"
+    );
+    setReactData(
+      "input[name='locations[0].ref.address.town']",
+      "change",
+      "London"
+    );
+    setReactSelectData(
+      "div[name='locations[0].ref.address.country']",
+      "change",
+      "united kingdom"
+    );
+    setReactSelectData(
+      "div[name='locations[1].address.country']",
+      "change",
+      "united kingdom"
+    );
+    setReactData(
+      "input[name='locations[1].address.postcode']",
+      "change",
+      "SW10 0SS"
+    );
+    setReactData(
+      "input[name='locations[1].address.streetNumber']",
+      "change",
+      "52B"
+    );
+    setReactData(
+      "input[name='locations[1].address.street']",
+      "change",
+      "Uverdale Rd"
+    );
+    setReactData("input[name='locations[1].address.town']", "change", "London");
+    setReactData(
+      "input[name='locations[1].livedFor.from']",
+      "change",
+      "01/07/2019"
+    );
+    setReactSelectData(
+      "div[name='locations[1].status']",
+      "change",
+      "Renting through managing agent"
+    );
+    setReactData("input[name='locations[1].ref.name']", "change", "Jack");
+    setReactData(
+      "input[name='locations[1].ref.phone']",
+      "change",
+      "+441632960176"
+    );
+    setReactData(
+      "input[name='locations[1].ref.email']",
+      "change",
+      "Jack@fortuneHouse.com"
+    );
+    setReactData(
+      "input[name='locations[1].ref.address.postcode']",
+      "change",
+      "SW10 0RH"
+    );
+    setReactData(
+      "input[name='locations[1].ref.address.streetNumber']",
+      "change",
+      "16"
+    );
+    setReactData(
+      "input[name='locations[1].ref.address.street']",
+      "change",
+      "Pooles Ln"
+    );
+    setReactData(
+      "input[name='locations[1].ref.address.town']",
+      "change",
+      "London"
+    );
+    setReactSelectData(
+      "div[name='locations[1].ref.address.country']",
+      "change",
+      "united kingdom"
     );
   }
 
@@ -330,6 +432,22 @@
       "input[name='currentEmployment.employment.employer.email']",
       "change",
       "Leam@bettr.com"
+    );
+    setReactData("input[name='savings.savings.amount']", "change", "0");
+    setReactData("input[name='savings.investments.amount']", "change", "0");
+    setReactData("input[name='savings.bonds.amount']", "change", "0");
+    setReactData("input[name='savings.propertySale.amount']", "change", "0");
+    setReactData("input[name='savings.propertyRentals.amount']", "change", "0");
+    setReactData("input[name='savings.pension.amount']", "change", "0");
+    setReactData(
+      "input[name='savings.workingTaxCredits.amount']",
+      "change",
+      "0"
+    );
+    setReactData(
+      "input[name='savings.benefitsUniversalCredit.amount']",
+      "change",
+      "0"
     );
   }
 
