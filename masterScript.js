@@ -34,7 +34,7 @@
   }
 
   function setReactSelectData(selector, eventType, identifier) {
-    const element = document.querySelector(selector).children[0].children[0]
+    const element = document.querySelector(selector).previousElementSibling
       .children[0].children[1].children[0].children[0];
     const event = new Event(eventType, {
       bubbles: true,
@@ -131,8 +131,8 @@
     setReactData("input[name='monthlyRent.amount']", "change", "1000");
     setReactData("input[name='securityDeposit.amount']", "change", "1153.84");
     setReactData("input[name='holdingDeposit.amount']", "change", "230.76");
-    setReactSelectData("div[name='rentFrequency']", "change", "Month");
-    setReactSelectData("div[name='prefContractLength']", "change", "12");
+    setReactSelectData("input[name='rentFrequency']", "change", "Month");
+    setReactSelectData("input[name='prefContractLength']", "change", "12");
   }
 
   function runReferenceScript() {
@@ -146,24 +146,23 @@
     });
     window.addEventListener("popstate", scriptChecker);
 
-    setReactSelectData("div[name='title']", "change", "mr");
-    setReactSelectData("div[name='gender']", "change", "male");
-    setReactSelectData("div[name='martialStatus']", "change", "single");
-    setReactSelectData("div[name='nationality']", "change", "united kingdom");
+    setReactSelectData("input[name='title']", "change", "mr");
+    setReactSelectData("input[name='gender']", "change", "male");
+    setReactSelectData("input[name='martialStatus']", "change", "single");
+    setReactSelectData("input[name='nationality']", "change", "united kingdom");
     setReactSelectData(
-      "div[name='postTenancyAddress.country']",
+      "input[name='postTenancyAddress.country']",
       "change",
       "united kingdom"
     );
     setReactSelectData(
-      "div[name='kin.address.country']",
+      "input[name='kin.address.country']",
       "change",
       "united kingdom"
     );
     setReactData("input[name='firstname']", "change", "John");
     setReactData("input[name='lastname']", "change", "Smith");
     setReactData("input[name='dateOfBirth']", "change", "05/08/1998");
-    setReactData("input[name='nationality']", "change", "DZ");
     setReactData("input[name='phone']", "change", "+441632960845");
     setReactData("input[name='dependants']", "change", "0");
     setReactData(
@@ -187,7 +186,6 @@
     setReactData("input[name='kin.address.streetNumber']", "change", "35");
     setReactData("input[name='kin.address.street']", "change", "Talma Rd");
     setReactData("input[name='kin.address.town']", "change", "London");
-    setReactData("input[name='kin.address.country']", "change", "GB");
     setReactData("input[name='kin.name']", "change", "Bill");
     setReactData("input[name='kin.relationship']", "change", "Father");
     setReactData("input[name='kin.email']", "change", "bill.smith@gmail.com");
@@ -206,7 +204,7 @@
     window.addEventListener("popstate", scriptChecker);
 
     setReactSelectData(
-      "div[name='locations[0].address.country']",
+      "input[name='locations[0].address.country']",
       "change",
       "united kingdom"
     );
@@ -232,7 +230,7 @@
       "15/01/2020"
     );
     setReactSelectData(
-      "div[name='locations[0].status']",
+      "input[name='locations[0].status']",
       "change",
       "Renting through same agent"
     );
@@ -268,12 +266,12 @@
       "London"
     );
     setReactSelectData(
-      "div[name='locations[0].ref.address.country']",
+      "input[name='locations[0].ref.address.country']",
       "change",
       "united kingdom"
     );
     setReactSelectData(
-      "div[name='locations[1].address.country']",
+      "input[name='locations[1].address.country']",
       "change",
       "united kingdom"
     );
@@ -299,7 +297,7 @@
       "01/07/2019"
     );
     setReactSelectData(
-      "div[name='locations[1].status']",
+      "input[name='locations[1].status']",
       "change",
       "Renting through managing agent"
     );
@@ -335,7 +333,7 @@
       "London"
     );
     setReactSelectData(
-      "div[name='locations[1].ref.address.country']",
+      "input[name='locations[1].ref.address.country']",
       "change",
       "united kingdom"
     );
@@ -352,14 +350,18 @@
     });
     window.addEventListener("popstate", scriptChecker);
 
-    setReactSelectData("div[name='currentIncomeStatus']", "change", "employed");
+    setReactSelectData(
+      "input[name='currentIncomeStatus']",
+      "change",
+      "employed"
+    );
     setReactData(
       "input[name='currentEmployment.staffPayrollNo']",
       "change",
       "123456"
     );
     setReactSelectData(
-      "div[name='currentEmployment.employment.type']",
+      "input[name='currentEmployment.employment.type']",
       "change",
       "permanent"
     );
@@ -409,7 +411,7 @@
       "London"
     );
     setReactSelectData(
-      "div[name='currentEmployment.employment.address.country']",
+      "input[name='currentEmployment.employment.address.country']",
       "change",
       "united kingdom"
     );
