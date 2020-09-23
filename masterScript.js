@@ -62,14 +62,14 @@
         runPropUploadScript();
         return;
       } else if (window.location.href.includes("app/background/references")) {
-        console.log("references");
+        ("references");
         clearInterval(interval);
         runReferenceScript();
         return;
       } else if (
         window.location.href.includes("app/background/residential/summary")
       ) {
-        console.log("residential summary");
+        ("residential summary");
         return;
       } else if (window.location.href.includes("app/background/residential")) {
         clearInterval(interval);
@@ -80,14 +80,14 @@
         runEmploymentScript();
         return;
       }
-      console.log("else");
+      ("else");
       return;
     }, 1000);
   }
 
   function runPropUploadScript() {
     const interval = setInterval(() => {
-      console.log("interval");
+      ("interval");
       if (
         document.querySelector("input[name='address.postcode']") ||
         document.querySelector("input[name='summary']") ||
@@ -147,7 +147,7 @@
 
   function runReferenceScript() {
     const interval = setInterval(() => {
-      console.log("interval");
+      ("interval");
       if (document.querySelector("input[name='title']")) {
         clearInterval(interval);
         const buttonTags = document.querySelectorAll("button");
@@ -221,7 +221,7 @@
 
   function runResidentialScript() {
     const interval = setInterval(() => {
-      console.log("interval");
+      ("interval");
       if (
         document.querySelector("input[name='locations[0].address.postcode']")
       ) {
@@ -380,7 +380,7 @@
 
   function runEmploymentScript() {
     const interval = setInterval(() => {
-      console.log("interval");
+      ("interval");
       if (document.querySelector("input[name='currentIncomeStatus']")) {
         clearInterval(interval);
         const buttonTags = document.querySelectorAll("button");
