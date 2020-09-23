@@ -57,7 +57,7 @@
   function scriptChecker() {
     const interval = setInterval(() => {
       if (window.location.pathname.includes("/upload")) {
-        console.log("prop upload");
+        ("prop upload");
         clearInterval(interval);
         runPropUploadScript();
         return;
