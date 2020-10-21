@@ -143,6 +143,43 @@
     setReactData("input[name='holdingDeposit.amount']", "change", "230.76");
     setReactSelectData("input[name='rentFrequency']", "change", "Month");
     setReactSelectData("input[name='prefContractLength']", "change", "12");
+    setReactData("input[name='landlordDetails.name']", "change", "John");
+    setReactData("input[name='landlordDetails.surname']", "change", "Harper");
+    setReactData(
+      "input[name='landlordDetails.phone']",
+      "change",
+      "+441632960465"
+    );
+    setReactData(
+      "input[name='landlordDetails.email']",
+      "change",
+      "kasparas+landlord@reneza.com"
+    );
+    setReactData(
+      "input[name='landlordDetails.address.postcode']",
+      "change",
+      "SE1 7DF"
+    );
+    setReactData(
+      "input[name='landlordDetails.address.streetNumber']",
+      "change",
+      "140"
+    );
+    setReactData(
+      "input[name='landlordDetails.address.street']",
+      "change",
+      "Lambeth Rd"
+    );
+    setReactData(
+      "input[name='landlordDetails.address.town']",
+      "change",
+      "London"
+    );
+    setReactSelectData(
+      "input[name='landlordDetails.address.country']",
+      "change",
+      "united king"
+    );
   }
 
   function runReferenceScript() {
