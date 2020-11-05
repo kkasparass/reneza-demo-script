@@ -192,7 +192,7 @@
           buttonTag.addEventListener("click", scriptChecker);
         });
 
-        setReactSelectData("input[name='title']", "change", "mr");
+        setReactSelectData("input[name='title']", "change", "mrs");
         setReactSelectData("input[name='gender']", "change", "male");
         setReactSelectData("input[name='martialStatus']", "change", "single");
         setReactSelectData(
@@ -202,11 +202,6 @@
         );
         setReactSelectData(
           "input[name='postTenancyAddress.country']",
-          "change",
-          "united kingdom"
-        );
-        setReactSelectData(
-          "input[name='kin.address.country']",
           "change",
           "united kingdom"
         );
@@ -240,18 +235,6 @@
           "change",
           "GB"
         );
-        setReactData("input[name='kin.address.postcode']", "change", "SW2 1AU");
-        setReactData("input[name='kin.address.streetNumber']", "change", "35");
-        setReactData("input[name='kin.address.street']", "change", "Talma Rd");
-        setReactData("input[name='kin.address.town']", "change", "London");
-        setReactData("input[name='kin.name']", "change", "Bill");
-        setReactData("input[name='kin.relationship']", "change", "Father");
-        setReactData(
-          "input[name='kin.email']",
-          "change",
-          "bill.smith@gmail.com"
-        );
-        setReactData("input[name='kin.phone']", "change", "+441632960176");
       }
     }, 200);
   }
