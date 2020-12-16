@@ -120,7 +120,11 @@
     setReactData("input[name='address.county']", "change", "London");
     setReactData("input[name='address.street']", "change", "Bank st");
     setReactData("input[name='address.town']", "change", "London");
-    setReactData("input[name='address.country']", "change", "GB");
+    setReactSelectData(
+      "input[name='address.country']",
+      "change",
+      "united king"
+    );
   }
   function runDetailsScript() {
     setRadioInput("input[name='type']");
