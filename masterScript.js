@@ -61,21 +61,29 @@
         clearInterval(interval);
         runPropUploadScript();
         return;
-      } else if (window.location.href.includes("app/background/references")) {
+      } else if (
+        window.location.href.includes("app/journey/background/personal")
+      ) {
         ("references");
         clearInterval(interval);
         runReferenceScript();
         return;
       } else if (
-        window.location.href.includes("app/background/residential/summary")
+        window.location.href.includes(
+          "app/journey/background/residential/summary"
+        )
       ) {
         ("residential summary");
         return;
-      } else if (window.location.href.includes("app/background/residential")) {
+      } else if (
+        window.location.href.includes("app/journey/background/residential")
+      ) {
         clearInterval(interval);
         runResidentialScript();
         return;
-      } else if (window.location.href.includes("app/background/employment")) {
+      } else if (
+        window.location.href.includes("app/journey/background/employment")
+      ) {
         clearInterval(interval);
         runEmploymentScript();
         return;
