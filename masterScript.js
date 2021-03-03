@@ -220,7 +220,11 @@
         setReactData("input[name='firstname']", "change", "John");
         setReactData("input[name='lastname']", "change", "Smith");
         setReactData("input[name='dateOfBirth']", "change", "05/08/1998");
-        setReactData("input[name='phone']", "change", "+441632960845");
+        setReactData(
+          "input[class='PhoneInputInput']",
+          "change",
+          "+445689775321"
+        );
         setReactData("input[name='dependants']", "change", "0");
         setReactData(
           "input[name='postTenancyAddress.postcode']",
@@ -255,7 +259,7 @@
     const interval = setInterval(() => {
       ("interval");
       if (
-        document.querySelector("input[name='locations[0].address.postcode']")
+        document.querySelector("input[name='locations[0].address.country']")
       ) {
         clearInterval(interval);
 
@@ -301,14 +305,19 @@
         );
         setReactData("input[name='locations[0].ref.name']", "change", "Jack");
         setReactData(
-          "input[name='locations[0].ref.phone']",
+          "input[class='PhoneInputInput']",
           "change",
-          "+441632960176"
+          "+445689775321"
         );
         setReactData(
           "input[name='locations[0].ref.email']",
           "change",
           "Jack@fortuneHouse.com"
+        );
+        setReactSelectData(
+          "input[name='locations[0].ref.address.country']",
+          "change",
+          "united kingdom"
         );
         setReactData(
           "input[name='locations[0].ref.address.postcode']",
@@ -329,11 +338,6 @@
           "input[name='locations[0].ref.address.town']",
           "change",
           "London"
-        );
-        setReactSelectData(
-          "input[name='locations[0].ref.address.country']",
-          "change",
-          "united kingdom"
         );
         setReactSelectData(
           "input[name='locations[1].address.country']",
