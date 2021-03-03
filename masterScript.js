@@ -339,6 +339,9 @@
           "change",
           "London"
         );
+
+        // TODO Fix this whole area with the phone filling
+
         setReactSelectData(
           "input[name='locations[1].address.country']",
           "change",
@@ -464,6 +467,11 @@
           "change",
           "16/08/2018"
         );
+        setReactSelectData(
+          "input[name='currentEmployment.employment.address.country']",
+          "change",
+          "united kingdom"
+        );
         setReactData(
           "input[name='currentEmployment.employment.address.postcode']",
           "change",
@@ -483,11 +491,6 @@
           "input[name='currentEmployment.employment.address.town']",
           "change",
           "London"
-        );
-        setReactSelectData(
-          "input[name='currentEmployment.employment.address.country']",
-          "change",
-          "united kingdom"
         );
         setReactData(
           "input[name='currentEmployment.employment.employer.name']",
